@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-body">
+    <div class="form-check form-check-inline">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="sex"
+        id="all"
+        value="all"
+        (change)="radioButtonChangeEmitter()"
+        [(ngModel)]="radioButtonSelected"
+      />
+      <label class="form-check-label" for="all">All ({{all}})</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="sex"
+        id="Female"
+        value="Female"
+        (change)="radioButtonChangeEmitter()"
+        [(ngModel)]="radioButtonSelected"
+      />
+      <label class="form-check-label" for="Female">Female({{female}})</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="sex"
+        id="Male"
+        value="Male"
+        (change)="radioButtonChangeEmitter()"
+        [(ngModel)]="radioButtonSelected"
+        />
+      <label class="form-check-label" for="Male">Male({{male}})</label>
+    </div>
+  </div>
+</div>
